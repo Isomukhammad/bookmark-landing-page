@@ -97,7 +97,7 @@ body {
 #container #title-div #title-img img {
   width: 100%;
 }
-#container #title-div #title-img #title-blue {
+#container #title-div #title-img .title-blue {
   content: "";
   background-color: hsl(231deg, 69%, 60%);
   height: 80%;
@@ -176,7 +176,7 @@ body {
   width: 100%;
   height: 100%;
 }
-#container #features-div #features-category #features-img #title-blue {
+#container #features-div #features-category #features-img .title-blue {
   content: "";
   background-color: hsl(231deg, 69%, 60%);
   height: 80%;
