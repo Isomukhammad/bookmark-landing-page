@@ -63,7 +63,7 @@ SubmitButton.addEventListener('click', (e) => {
 })
 
 Hamburger.addEventListener('click', () => {
-    if(Logo.src == 'http://127.0.0.1:5500/images/logo-bookmark.svg'){
+    if(Logo.src == './images/logo-bookmark.svg'){
         Header.classList.value += 'header-active';
         Logo.src = './images/logo-bookmark-footer.svg'  
         Hamburger.src = './images/icon-close.svg'
