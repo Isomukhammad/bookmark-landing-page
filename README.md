@@ -1,6 +1,6 @@
 # Frontend Mentor - Bookmark landing page
 
-## Live Demo
+## [Live Demo](https://isomukhammad.github.io/bookmark-landing-page/)
 
 ## Preview
 
