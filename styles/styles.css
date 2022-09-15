@@ -42,14 +42,14 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-#container header #nav-links {
+#container header #mobile-links {
   width: 100%;
   display: none;
   flex-direction: column;
   align-items: center;
   margin: 4em 0;
 }
-#container header #nav-links p {
+#container header #mobile-links p {
   color: white;
   font-weight: 500;
   text-align: center;
@@ -58,14 +58,17 @@ body {
   text-transform: uppercase;
   border-bottom: 1px solid white;
 }
-#container header #nav-links p:nth-child(1) {
+#container header #mobile-links p:nth-child(1) {
   border-top: 1px solid white;
 }
-#container header #nav-links #login {
+#container header #mobile-links .login {
   letter-spacing: 0.4em;
   margin-top: 1.5em;
   border: 3px solid white;
   border-radius: 0.3em;
+}
+#container header #desktop-links {
+  display: none;
 }
 #container header #hamburger {
   cursor: pointer;
@@ -326,4 +329,159 @@ footer #footer-links {
   cursor: pointer;
   display: flex;
   gap: 2em;
+}
+
+@media screen and (min-width: 768px) {
+  #container header {
+    flex-direction: row;
+  }
+  #container header #hamburger {
+    display: none;
+  }
+  #container header #desktop-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+  }
+  #container header #desktop-links p {
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  #container header #desktop-links .login {
+    cursor: pointer;
+    letter-spacing: 0.4em;
+    padding: 0.3em;
+    border: 3px solid black;
+    border-radius: 0.3em;
+  }
+  #container #title-div {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
+  #container #title-div div {
+    width: 50%;
+  }
+  #container #title-div div:nth-child(2) {
+    text-align: start;
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+  }
+  #container #title-div div:nth-child(2) h2 {
+    font-size: 3em;
+  }
+  #container #features-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
+  #container #features-div #features-subtitle {
+    width: 50%;
+  }
+  #container #features-div #features-subtitle h2 {
+    font-size: 2em;
+  }
+  #container #features-div #features-buttons {
+    flex-direction: row;
+  }
+  #container #features-div #features-buttons div:nth-child(1) {
+    border-top: none;
+  }
+  #container #features-div #features-category {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+  }
+  #container #features-div #features-category div {
+    width: 50%;
+  }
+  #container #features-div #features-category div:nth-child(2) {
+    text-align: start;
+  }
+  #container #features-div #features-category div:nth-child(2) h2 {
+    padding: 0;
+    font-size: 2em;
+  }
+  #container #features-div #features-category div:nth-child(2) .blue-button {
+    display: block;
+  }
+  #container #download-div h3 {
+    font-size: 1.8em;
+  }
+  #container #download-div p {
+    width: 40%;
+  }
+  #container #download-div #download-categories {
+    display: flex;
+    flex-direction: row;
+  }
+  #container #download-div #download-categories p {
+    width: 100%;
+  }
+  #container #download-div #download-categories div {
+    padding: 5em 0;
+  }
+  #container #download-div #download-categories div .blue-button {
+    width: 85%;
+  }
+  #container #download-div #download-categories div:nth-of-type(2) {
+    margin-top: 2em;
+    margin-bottom: -2em;
+  }
+  #container #download-div #download-categories div:nth-of-type(3) {
+    margin-top: 4em;
+    margin-bottom: -4em;
+  }
+  #container #questions-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #container #questions-div p {
+    width: 40%;
+  }
+  #container #questions-div .questions {
+    width: 40%;
+  }
+  #container #questions-div .questions p {
+    width: 100%;
+  }
+  #contact-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+  }
+  #contact-div p {
+    font-size: 0.8em;
+  }
+  #contact-div h3 {
+    width: 40%;
+    font-size: 1.7em;
+  }
+  #contact-div form {
+    width: 40%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer div:nth-of-type(1) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3em;
+  }
 }/*# sourceMappingURL=styles.css.map */

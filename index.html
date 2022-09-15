@@ -15,13 +15,20 @@
       <div id = 'nav-buttons'>
         <img src="./images/logo-bookmark.svg" alt="logo" id = 'bookmark-logo'/>
         <img src="./images/icon-hamburger.svg" alt="menu" id = 'hamburger'/>
+        <div id = 'desktop-links'>
+          <p class = 'nav-link'>features</p>
+          <p class = 'nav-link'>pricing</p>
+          <p class = 'nav-link'>contact</p>
+          <p class = 'login' class = 'nav-link'>login</p>
+        </div>
       </div>
 
-      <div id = 'nav-links'>
+      <div id = 'mobile-links'>
         <p class = 'nav-link'>features</p>
         <p class = 'nav-link'>pricing</p>
         <p class = 'nav-link'>contact</p>
-        <p id = 'login' class = 'nav-link'>login</p></div>
+        <p class = 'login' class = 'nav-link'>login</p>
+      </div>
     </header>
 
     <div id = 'title-div'>
@@ -29,20 +36,24 @@
         <img src="./images/illustration-hero.svg" alt="">
         <div id = 'title-blue'></div>
       </div>
-  
-      <h2>A Simple Bookmark Manager</h2>
-  
-      <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
-  
+
       <div>
-        <button class = 'blue-button'>Get it on Chrome</button>
-        <button id = 'firefox-button'>Get it on Firefox</button>
+        <h2>A Simple Bookmark Manager</h2>
+    
+        <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+    
+        <div>
+          <button class = 'blue-button'>Get it on Chrome</button>
+          <button id = 'firefox-button'>Get it on Firefox</button>
+        </div>
       </div>
     </div>
   
     <div id = 'features-div'>
-      <h2>Features</h2>
-      <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+      <div id = 'features-subtitle'>
+        <h2>Features</h2>
+        <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+      </div>
   
       <div id = 'features-buttons'>
         <div>
@@ -64,8 +75,8 @@
         <div>
           <h2 id = 'features-title'>Bookmark in one click</h2>
           <p id = 'features-description'>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+          <button class = 'blue-button'>More Info</button>
         </div>
-        <button class = 'blue-button'>More Info</button>
       </div>
     </div>
   
@@ -155,10 +166,12 @@
   </div>
 
   <footer>
-    <img id = 'footer-logo' src="./images/logo-bookmark-footer.svg" alt="logo-bookmark">
-    <p>features</p>
-    <p>pricing</p>
-    <p>contact</p>
+    <div>
+      <img id = 'footer-logo' src="./images/logo-bookmark-footer.svg" alt="logo-bookmark">
+      <p>features</p>
+      <p>pricing</p>
+      <p>contact</p>
+    </div>
 
     <div id = 'footer-links'>
       <img src="./images/icon-facebook.svg" alt="facebook-icon">

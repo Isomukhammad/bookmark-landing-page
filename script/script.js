@@ -9,7 +9,9 @@ const SubmitButton = document.querySelector('#submit-button');
 const Header = document.querySelector('header');
 const Hamburger = document.querySelector('#hamburger');
 const Logo = document.querySelector('#bookmark-logo');
-const Links = document.querySelector('#nav-links');
+const MobileLinks = document.querySelector('#mobile-links');
+const screen = window.matchMedia( "(min-width: 768)" );
+
 
 let arr;
 
@@ -38,6 +40,7 @@ for(let i = 0; i < FeaturesButtons?.length; i++){
 const removeAllHeight = () => {
     for(let i = 0; i < QuestionButtons?.length; i++){
         Question[i].style.height = 0;
+        Arrow[i].style.transform = 'rotate(0deg)';
     }
 }
 
@@ -64,11 +67,11 @@ Hamburger.addEventListener('click', () => {
         Header.classList.value += 'header-active';
         Logo.src = './images/logo-bookmark-footer.svg'  
         Hamburger.src = './images/icon-close.svg'
-        Links.style.display = 'flex';
+        MobileLinks.style.display = 'flex';
     } else {
         Header.classList.value = '';
         Logo.src = './images/logo-bookmark.svg'
         Hamburger.src = './images/icon-hamburger.svg'
-        Links.style.display = 'none';
+        MobileLinks.style.display = 'none';
     }
 })
