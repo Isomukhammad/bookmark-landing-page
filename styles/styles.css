@@ -16,7 +16,7 @@ body {
   overflow: hidden;
 }
 #container .blue-button {
-  border: none;
+  border: 1px solid transparent;
   background-color: hsl(231deg, 69%, 60%);
   color: white;
   font-weight: 600;
@@ -116,9 +116,13 @@ body {
 #container #title-div p {
   color: hsl(229deg, 8%, 60%);
 }
+#container #title-div #title-buttons {
+  width: 100%;
+}
 #container #title-div #firefox-button {
+  border-radius: 0.3em;
   cursor: pointer;
-  border: none;
+  border: 2px solid transparent;
   padding: 1em;
   font-size: 0.8em;
   font-weight: 600;
@@ -260,7 +264,6 @@ body {
   height: fit-content;
   border-bottom: 1px solid hsla(229deg, 8%, 60%, 0.5);
   height: 0;
-  transition: height 2s ease-in;
 }
 #container #questions-div button {
   margin-top: 2em;
@@ -348,12 +351,18 @@ footer #footer-links {
     cursor: pointer;
     text-transform: uppercase;
   }
+  #container header #desktop-links p:hover {
+    color: hsl(0deg, 94%, 66%);
+  }
   #container header #desktop-links .login {
     cursor: pointer;
     letter-spacing: 0.4em;
     padding: 0.3em;
     border: 3px solid black;
     border-radius: 0.3em;
+  }
+  #container header #desktop-links .login:hover {
+    border-color: hsl(0deg, 94%, 66%);
   }
   #container #title-div {
     display: flex;
@@ -375,6 +384,16 @@ footer #footer-links {
   #container #title-div div:nth-child(2) h2 {
     font-size: 3em;
   }
+  #container #title-div div:nth-child(2) .blue-button:hover {
+    background-color: transparent;
+    color: hsl(231deg, 69%, 60%);
+    border-color: hsl(231deg, 69%, 60%);
+  }
+  #container #title-div div:nth-child(2) #title-buttons #firefox-button:hover {
+    border-radius: 0.3em;
+    border: 2px solid hsl(229deg, 31%, 21%);
+    box-shadow: none;
+  }
   #container #features-div {
     display: flex;
     flex-direction: column;
@@ -391,9 +410,14 @@ footer #footer-links {
   }
   #container #features-div #features-buttons {
     flex-direction: row;
+    width: 50%;
   }
   #container #features-div #features-buttons div:nth-child(1) {
     border-top: none;
+  }
+  #container #features-div #features-buttons button {
+    padding: 1em 0;
+    width: 100%;
   }
   #container #features-div #features-category {
     display: flex;
@@ -429,10 +453,36 @@ footer #footer-links {
     width: 100%;
   }
   #container #download-div #download-categories div {
+    background-color: white;
     padding: 5em 0;
+    cursor: pointer;
+    transition: transform 0.5s;
   }
   #container #download-div #download-categories div .blue-button {
     width: 85%;
+  }
+  #container #download-div #download-categories div:hover {
+    transform: scale(1.1);
+  }
+  @-webkit-keyframes scaling {
+    0% {
+      transform: scale(1);
+      -webkit-transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+    }
+  }
+  @keyframes scaling {
+    0% {
+      transform: scale(1);
+      -webkit-transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+    }
   }
   #container #download-div #download-categories div:nth-of-type(2) {
     margin-top: 2em;

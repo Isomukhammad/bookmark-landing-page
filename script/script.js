@@ -64,14 +64,14 @@ SubmitButton.addEventListener('click', (e) => {
 
 Hamburger.addEventListener('click', () => {
     if(Logo.src.includes('logo-bookmark.svg')){
+        MobileLinks.style.display = 'flex';
         Header.classList.value += 'header-active';
         Logo.src = './images/logo-bookmark-footer.svg'  
         Hamburger.src = './images/icon-close.svg'
-        MobileLinks.style.display = 'flex';
     } else {
+        MobileLinks.style.display = 'none';
         Header.classList.value = '';
         Logo.src = './images/logo-bookmark.svg'
         Hamburger.src = './images/icon-hamburger.svg'
-        MobileLinks.style.display = 'none';
     }
 })
